@@ -25,6 +25,7 @@ import HelpOutlineButton from './components/HelpOutlineButton';
 import AddPodcastScreen from './screens/AddPodcastScreen';
 import SnippetScreen from './screens/SnippetScreen';
 import FirstScreen from "./screens/FirstScreen";
+import AudioEditScreen from './screens/AudioEditScreen';
 
 function MyImagePicker(props) {
   const [picSource, setPicSource] = useState(null);
@@ -444,6 +445,7 @@ const App = () => (
         <Stack.Navigator initialRouteName="FirstScreen">
             <Stack.Screen name="FirstScreen" options={{title:"Новый подкаст"}} component={FirstScreen} />
             <Stack.Screen name="AddPodcastScreen" options={{title:"Новый подкаст"}} component={AddPodcastScreen} />
+            <Stack.Screen name="AudioEditScreen" options={{title:"Редактирование"}} component={AudioEditScreen} />
             <Stack.Screen name="SnippetScreen" options={{title: "Новый подкаст"}} component={SnippetScreen} />
         </Stack.Navigator>
     </NavigationContainer>
