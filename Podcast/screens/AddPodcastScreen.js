@@ -12,7 +12,9 @@ class AddPodcastScreen extends React.Component {
         inappropriateContent: false,
         excludeEpisode: false,
         podcastTrailer: false,
-        availability: 'Всем пользователям'
+        availability: 'Всем пользователям',
+        podcastName: '',
+        podcastDescription: ''
     };
     async pickAudio() {
         try {
@@ -46,11 +48,17 @@ class AddPodcastScreen extends React.Component {
                     </TouchableOpacity>
                     <View>
                         <Text>Название</Text>
-                        <TextInput placeholder="Введите наззвание подкаста"></TextInput>
+                        <TextInput
+                            placeholder="Введите наззвание подкаста"
+                            onChangeText={value => this.setState({podcastName: value})}
+                        />
                     </View>
                 </View>
                 <Text>Описание подкаста</Text>
-                <TextInput></TextInput>
+                <TextInput
+                    multiline={true}
+                    onChangeText={value => this.setState({podcastDescription: value})}
+                />
                 {this.state.pickedFile == null ?
                     <View
                         style={{
@@ -119,8 +127,8 @@ class AddPodcastScreen extends React.Component {
                 {this.state.availability == 'Всем пользователям' && <Text>При публикации записи с эпизодом, он становится доступным для всех пользователей</Text>}
                 {this.state.availability == 'Только друзьям' && <Text>При публикации записи с эпизодом, он становится доступным только для друзей</Text>}
                 {this.state.availability == 'Только мне' && <Text>При публикации записи с эпизодом, он становится доступным только Вам</Text>}
-                <TouchableOpacity>
-                    <Text>--далее--</Text>
+                <TouchableOpacity onPress={() => {this.props.navigation.navigate('SnippetScreen', {podcastName: this.state.podcastName, podcastDescription: this.state.podcastDescription})}}>
+                    <Text>Далее</Text>
                 </TouchableOpacity>
             </View>
         );

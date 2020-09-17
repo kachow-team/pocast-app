@@ -23,6 +23,7 @@ import Svg, {
 } from 'react-native-svg';
 import HelpOutlineButton from './components/HelpOutlineButton';
 import AddPodcastScreen from './screens/AddPodcastScreen';
+import SnippetScreen from './screens/SnippetScreen';
 
 function MyImagePicker(props) {
   const [picSource, setPicSource] = useState(null);
@@ -456,7 +457,8 @@ const Stack = createStackNavigator();
 const App = () => (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="AddPodcastScreen">
-            <Stack.Screen name="AddPodcastScreen" options={{title:"Новый подкаст"}} component={AddPodcastScreen} />
+            <Stack.Screen name="AddPodcastScreen" options={{title: "Новый подкаст"}} component={AddPodcastScreen} />
+            <Stack.Screen name="SnippetScreen" options={{title: "Новый подкаст"}} component={SnippetScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 );
