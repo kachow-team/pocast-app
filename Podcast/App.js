@@ -8,7 +8,7 @@ import Constants from 'expo-constants';
 
 import CreateSimpleHelp from './components/CreateSimpleHelp'
 import CreateRegularHelp from './components/CreateRegularHelp';
-import CreateDonationButton from './components/CreateDonationButton';
+import CreatePodcastButton from './components/CreatePodcastButton';
 import UploadPicCover from './components/UploadPicCover';
 import DismissOverlay from './components/DismissOverlay';
 import NextButton from './components/NextButton';
@@ -24,6 +24,7 @@ import Svg, {
 import HelpOutlineButton from './components/HelpOutlineButton';
 import AddPodcastScreen from './screens/AddPodcastScreen';
 import SnippetScreen from './screens/SnippetScreen';
+import FirstScreen from "./screens/FirstScreen";
 
 function MyImagePicker(props) {
   const [picSource, setPicSource] = useState(null);
@@ -96,43 +97,27 @@ function HomeScreen({ navigation }) {
 );
 }
 
-function Donations({ navigation }) {
-  return (
-      <View style={styles.donationsScreen}>
-      <Text>У Вас пока нет сборов.</Text>
-  <Text>Начниете доброе дело.</Text>
-  <Text></Text>
-  <TouchableOpacity
-  style={styles.createDonationButton}
-  onPress={() => navigation.navigate('DonationType')}
->
-<CreateDonationButton />
-  </TouchableOpacity>
-  </View>
-);
-}
-
-function DonationType({ navigation }) {
-  return (
-      <View style={styles.donationTypeScreen}>
-      <TouchableOpacity
-  style={styles.button}
-  onPress={() => navigation.navigate('TargetDonation')}
->
-<CreateSimpleHelp />
-  </TouchableOpacity>
-  <TouchableOpacity
-  style={styles.button}
-  onPress={() => navigation.navigate('RegularDonation')}
->
-<CreateRegularHelp />
-  </TouchableOpacity>
-
-
-
-  </View>
-);
-}
+// function DonationType({ navigation }) {
+//   return (
+//       <View style={styles.donationTypeScreen}>
+//       <TouchableOpacity
+//   style={styles.button}
+//   onPress={() => navigation.navigate('TargetDonation')}
+// >
+// <CreateSimpleHelp />
+//   </TouchableOpacity>
+//   <TouchableOpacity
+//   style={styles.button}
+//   onPress={() => navigation.navigate('RegularDonation')}
+// >
+// <CreateRegularHelp />
+//   </TouchableOpacity>
+//
+//
+//
+//   </View>
+// );
+// }
 
 class TargetDonation extends React.Component<props> {
   state = {
@@ -456,8 +441,9 @@ const Stack = createStackNavigator();
 
 const App = () => (
     <NavigationContainer>
-        <Stack.Navigator initialRouteName="AddPodcastScreen">
-            <Stack.Screen name="AddPodcastScreen" options={{title: "Новый подкаст"}} component={AddPodcastScreen} />
+        <Stack.Navigator initialRouteName="FirstScreen">
+            <Stack.Screen name="FirstScreen" options={{title:"Новый подкаст"}} component={FirstScreen} />
+            <Stack.Screen name="AddPodcastScreen" options={{title:"Новый подкаст"}} component={AddPodcastScreen} />
             <Stack.Screen name="SnippetScreen" options={{title: "Новый подкаст"}} component={SnippetScreen} />
         </Stack.Navigator>
     </NavigationContainer>
