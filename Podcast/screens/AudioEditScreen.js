@@ -9,46 +9,55 @@ import PlusBlueButton from "../components/PlusBlueButton";
 import RemoveCircle from "../components/RemoveSircle";
 
 function AudioEditScreen({navigation}) {
-    const [timecodes, changetimecodes] = useState([1]);
+    const [timecodes, changetimecodes] = useState([]);
+    const addCode = () => {
+        changetimecodes(timecodes.concat(Math.random() * 1000000000000000000));
+    };
+    const removeCode = (code) => {
+        changetimecodes(
+            timecodes.filter((item) => item !== code)
+        )
+    };
 
     return (
-        <View style={styles.donationsScreen}>
-            <View style={styles.icon}>
+        <View style={styles.audioeditscreen}>
+            <View style={{marginTop: 12}}>
                 <AudioLine/>
             </View>
-            <View>
+            <View style={{marginTop: 12, width: '100%', marginLeft: 12}}>
                 <Text style={styles.header}>Таймкоды</Text>
-                <View style={{flexDirection: 'row', alignItems: 'center', marginBottom:10, marginTop: 10}}
-                onPress={() => {
-                    let a = timecodes.push(1);
-                    changetimecodes(a);
-                }}
-                >
+                <View style={{flexDirection: 'row', alignItems: 'center', marginBottom: 10, marginTop: 10}}>
                     <View style={{marginRight: 24}}>
-                    <PlusBlueButton onPress={() => {
-                        let a = timecodes.push(1);
-                        changetimecodes([1,2,3]);
-                    }}/>
+                        <TouchableOpacity onPress={() => {
+                            addCode();
+                        }}>
+                            <PlusBlueButton/>
+                        </TouchableOpacity>
                     </View>
-                    <Text onPress={() => {
-                        let a = timecodes.push(1);
-                        changetimecodes([1,2,3]);
+                    <Text style={styles.blueText} onPress={() => {
+                        addCode();
                     }}>Добавить таймкод</Text>
                 </View>
                 {timecodes.map((item) =>
-                    <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                    <View key={item} style={{flexDirection: 'row', alignItems: 'center'}}>
+                        <TouchableOpacity onPress={() => {
+                            removeCode(item);
+                        }}>
                         <View style={{marginBottom: 10}}>
-                        <RemoveCircle/>
+                            <RemoveCircle/>
                         </View>
+                        </TouchableOpacity>
                         <TextInput
-                            style={{...styles.textInput,
-                            width:'60%'
+                            style={{
+                                ...styles.textInput,
+                                width: '60%'
                             }}
                             placeholder="Название"
                         />
                         <TextInput
-                            style={{...styles.textInput,
-                                width:'20%'
+                            style={{
+                                ...styles.textInput,
+                                width: '20%'
                             }}
                             placeholder="Время"
                         />
@@ -62,11 +71,11 @@ function AudioEditScreen({navigation}) {
 }
 
 const styles = StyleSheet.create({
-    donationsScreen: {
+    audioeditscreen: {
         flex: 1,
         backgroundColor: "#FFFFFF",
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         marginLeft: 4,
         marginRight: 4
     },
@@ -86,7 +95,8 @@ const styles = StyleSheet.create({
         "lineHeight": 16,
         "letterSpacing": -0.078,
         "textTransform": "uppercase",
-        "color": "#818C99"
+        "color": "#818C99",
+        "width": "100%"
 
     },
     textInput: {
@@ -103,6 +113,14 @@ const styles = StyleSheet.create({
         "paddingLeft": 12,
         marginBottom: 12,
 
+    },
+    blueText: {
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "fontSize": 16,
+        "lineHeight": 20,
+        "letterSpacing": -0.32,
+        "color": "#3F8AE0"
     }
 
 });
