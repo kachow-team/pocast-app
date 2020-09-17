@@ -5,64 +5,65 @@ import RNPickerSelect from 'react-native-picker-select';
 import CheckBox from '@react-native-community/checkbox';
 import PickerIcon from '../icons/PickerIcon';
 
-const AddPodcastScreen = (props) => {
-    const [inappropriateContent, setInappropriateContent] = useState(false);
-    const [excludeEpisode, setExcludeEpisode] = useState(false);
-    const [podcastTrailer, setPodcastTrailer] = useState(false);
-    const [availability, setAvailability] = useState(null);
-    return (
-        <View>
-            <TouchableOpacity>
-                <Text>--image picker--</Text>
-            </TouchableOpacity>
-            <Text>Название</Text>
-            <TextInput placeholder="Введите наззвание подкаста"></TextInput>
-            <Text>Описание подкаста</Text>
-            <TextInput></TextInput>
-            <Text>Загрузите Ваш подкаст</Text>
-            <Text>Выберите готовый аудиофайл из Вашего телефона и добавьте его</Text>
-            <TouchableOpacity>
-                <Text>-file input--</Text>
-            </TouchableOpacity>
-            <Text>--line--</Text>
-            <CheckBox
-                value={inappropriateContent}
-                onValueChange={(newValue) => {setInappropriateContent(newValue)}}
-            />
-            <Text>Ненормативный контент</Text>
-            <CheckBox
-                value={excludeEpisode}
-                onValueChange={(newValue) => {setExcludeEpisode(newValue)}}
-            />
-            <Text>Исключить эпизод из экспорта</Text>
-            <CheckBox
-                value={podcastTrailer}
-                onValueChange={(newValue) => {setPodcastTrailer(newValue)}}
-            />
-            <Text>Трейлер подкаста</Text>
-            <RNPickerSelect
-                style={pickerSelectStyles}
-                useNativeAndroidPickerStyle={false}
-                placeholder={{
-                    label: 'Выберите автора',
-                    value: null,
-                    color: '#9EA0A4'
-                }}
-                items={[
-                    {label: 'Андрей Иванов', value: 'Андрей Иванов'},
-                    {label: 'Фонд поддержки сурикатов', value: 'Фонд поддержки сурикатов'},
-                    {label: 'Фонд ремонта Молнии МакКвина', value: 'Фонд ремонта Молнии МакКвина'},
-                ]}
-                onValueChange={value => {setAvailability(value)}}
-                value={availability}
-                Icon={() => (<PickerIcon />)}
-            />
-            <Text>При публикации записи с эпизодом, он становится доступным для всех пользователей --доделать под пикер--</Text>
-            <TouchableOpacity>
-                <Text>--далее--</Text>
-            </TouchableOpacity>
-        </View>
-    );
+class AddPodcastScreen extends React.Component {
+    state = {
+        inappropriateContent: false,
+        excludeEpisode: false,
+        podcastTrailer: false,
+        availability: 'Всем пользователям'
+    };
+    render() {
+        return (
+            <View>
+                <TouchableOpacity>
+                    <Text>--image picker--</Text>
+                </TouchableOpacity>
+                <Text>Название</Text>
+                <TextInput placeholder="Введите наззвание подкаста"></TextInput>
+                <Text>Описание подкаста</Text>
+                <TextInput></TextInput>
+                <Text>Загрузите Ваш подкаст</Text>
+                <Text>Выберите готовый аудиофайл из Вашего телефона и добавьте его</Text>
+                <TouchableOpacity>
+                    <Text>-file input--</Text>
+                </TouchableOpacity>
+                <Text>--line--</Text>
+                <CheckBox
+                    value={this.state.inappropriateContent}
+                    onValueChange={(newValue) => {this.setState({inappropriateContent: newValue})}}
+                />
+                <Text>Ненормативный контент</Text>
+                <CheckBox
+                    value={this.state.excludeEpisode}
+                    onValueChange={(newValue) => {this.setState({excludeEpisode: newValue})}}
+                />
+                <Text>Исключить эпизод из экспорта</Text>
+                <CheckBox
+                    value={this.state.podcastTrailer}
+                    onValueChange={(newValue) => {this.setState({podcastTrailer: newValue})}}
+                />
+                <Text>Трейлер подкаста</Text>
+                <RNPickerSelect
+                    style={pickerSelectStyles}
+                    useNativeAndroidPickerStyle={false}
+                    items={[
+                        {label: 'Всем пользователям', value: 'Всем пользователям'},
+                        {label: 'Только друзьям', value: 'Только друзьям'},
+                        {label: 'Только мне', value: 'Только мне'},
+                    ]}
+                    onValueChange={value => {this.setState({availability: value})}}
+                    value={this.state.availability}
+                    Icon={() => (<PickerIcon />)}
+                />
+                {this.state.availability == 'Всем пользователям' && <Text>При публикации записи с эпизодом, он становится доступным для всех пользователей</Text>}
+                {this.state.availability == 'Только друзьям' && <Text>При публикации записи с эпизодом, он становится доступным только для друзей</Text>}
+                {this.state.availability == 'Только мне' && <Text>При публикации записи с эпизодом, он становится доступным только Вам</Text>}
+                <TouchableOpacity>
+                    <Text>--далее--</Text>
+                </TouchableOpacity>
+            </View>
+        );
+    }
 };
 
 const pickerSelectStyles = StyleSheet.create({
