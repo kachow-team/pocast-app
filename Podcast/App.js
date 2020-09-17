@@ -23,9 +23,10 @@ import Svg, {
 } from 'react-native-svg';
 import HelpOutlineButton from './components/HelpOutlineButton';
 import AddPodcastScreen from './screens/AddPodcastScreen';
-import SnippetScreen from './screens/SnippetScreen';
+import AudioEditScreen from './screens/AudioEditScreen'
+import DoneScreen from './screens/DoneScreen';
+
 import FirstScreen from "./screens/FirstScreen";
-import AudioEditScreen from './screens/AudioEditScreen';
 
 function MyImagePicker(props) {
   const [picSource, setPicSource] = useState(null);
@@ -424,21 +425,6 @@ function BigMock({ route, navigation }) {
 
 const Stack = createStackNavigator();
 
-// function App() {
-//   return (
-//       <NavigationContainer>
-//       <Stack.Navigator initialRouteName="Donations" screenOptions={{
-//     headerBackTitleVisible: false}}>
-// <Stack.Screen name="Donations" options={{title:"Пожертвования"}} component={Donations} />
-//   <Stack.Screen name="DonationType" options={{title:"Тип сбора"}} component={DonationType} />
-//   <Stack.Screen name="TargetDonation" options={{title:"Целевой сбор"}} component={TargetDonation} />
-//   <Stack.Screen name="RegularDonation" options={{title:"Регулярный сбор"}} component={RegularDonation}/>
-//   <Stack.Screen name="Feed" options={{title:"Лента"}} component={Feed} />
-//   <Stack.Screen name="BigMock" options={{headerShown:false}} component={BigMock}/>
-//   </Stack.Navigator>
-//   </NavigationContainer>
-// );
-// }
 
 const App = () => (
     <NavigationContainer>
@@ -446,7 +432,7 @@ const App = () => (
             <Stack.Screen name="FirstScreen" options={{title:"Новый подкаст"}} component={FirstScreen} />
             <Stack.Screen name="AddPodcastScreen" options={{title:"Новый подкаст"}} component={AddPodcastScreen} />
             <Stack.Screen name="AudioEditScreen" options={{title:"Редактирование"}} component={AudioEditScreen} />
-            <Stack.Screen name="SnippetScreen" options={{title: "Новый подкаст"}} component={SnippetScreen} />
+            <Stack.Screen name="DoneScreen" options={{title: "Готово"}} component={DoneScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 );
