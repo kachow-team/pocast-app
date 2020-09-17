@@ -51,18 +51,28 @@ class AddPodcastScreen extends React.Component {
                 </View>
                 <Text>Описание подкаста</Text>
                 <TextInput></TextInput>
-                <View
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    }}>
-                    <Text>Загрузите Ваш подкаст</Text>
-                    <Text>Выберите готовый аудиофайл из Вашего телефона и добавьте его</Text>
-                    <TouchableOpacity onPress={() => {this.pickAudio()}}>
-                        {this.state.pickedFile == null ? <Text>-file input--</Text> : <Text>{this.state.pickedFile.name}</Text>}
-                    </TouchableOpacity>
-                </View>
+                {this.state.pickedFile == null ?
+                    <View
+                        style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }}>
+                        <Text>Загрузите Ваш подкаст</Text>
+                        <Text>Выберите готовый аудиофайл из Вашего телефона и добавьте его</Text>
+                        <TouchableOpacity onPress={() => {this.pickAudio()}}>
+                            <Text>Загрузить файл</Text>
+                        </TouchableOpacity>
+                    </View>
+                :
+                    <View>
+                        <Text>{this.state.pickedFile.name}</Text>
+                        <Text>Вы можете добавить таймкоды и скорректировать подкаст в режиме редактирования</Text>
+                        <TouchableOpacity onPress={() => {this.props.navigation.navigate('AudioEditScreen', this.state.pickedFile)}}>
+                            <Text>Редактировать аудиозапись</Text>
+                        </TouchableOpacity>
+                    </View>
+                }
                 <Text>--line--</Text>
                 <View
                     style={{
