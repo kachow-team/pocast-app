@@ -25,6 +25,7 @@ class AddPodcastScreen extends React.Component {
               res.name,
               res.size
             );
+            this.setState({pickedFile: {uri: res.uri, name: res.name}});
           } catch (err) {
             if (DocumentPicker.isCancel(err)) {
               // User cancelled the picker, exit any dialogs or menus and move on
@@ -58,8 +59,8 @@ class AddPodcastScreen extends React.Component {
                     }}>
                     <Text>Загрузите Ваш подкаст</Text>
                     <Text>Выберите готовый аудиофайл из Вашего телефона и добавьте его</Text>
-                    <TouchableOpacity>
-                        <Text>-file input--</Text>
+                    <TouchableOpacity onPress={() => {this.pickAudio()}}>
+                        {this.state.pickedFile == null ? <Text>-file input--</Text> : <Text>{this.state.pickedFile.name}</Text>}
                     </TouchableOpacity>
                 </View>
                 <Text>--line--</Text>
