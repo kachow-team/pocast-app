@@ -139,7 +139,7 @@ class AddPodcastScreen extends React.Component {
                 {this.state.availability == 'Всем пользователям' && <Text>При публикации записи с эпизодом, он становится доступным для всех пользователей</Text>}
                 {this.state.availability == 'Только друзьям' && <Text>При публикации записи с эпизодом, он становится доступным только для друзей</Text>}
                 {this.state.availability == 'Только мне' && <Text>При публикации записи с эпизодом, он становится доступным только Вам</Text>}
-                <TouchableOpacity onPress={() => {this.props.navigation.navigate('SnippetScreen', {podcastName: this.state.podcastName, podcastDescription: this.state.podcastDescription})}}>
+                <TouchableOpacity onPress={() => {this.props.navigation.navigate('DoneScreen', {podcastName: this.state.podcastName, podcastDescription: this.state.podcastDescription})}}>
                     <Text>Далее</Text>
                 </TouchableOpacity>
             </View>
