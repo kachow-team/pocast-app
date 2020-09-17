@@ -8,6 +8,7 @@ import DocumentPicker from 'react-native-document-picker';
 import ImageIcon from '../components/ImageIcon';
 import UploadFileButton from '../components/UploadFileButton';
 import EditAudioButton from '../components/EditAudioButton';
+import NextButton from '../components/NextButton';
 
 class AddPodcastScreen extends React.Component {
     state = {
@@ -139,9 +140,11 @@ class AddPodcastScreen extends React.Component {
                 {this.state.availability == 'Всем пользователям' && <Text>При публикации записи с эпизодом, он становится доступным для всех пользователей</Text>}
                 {this.state.availability == 'Только друзьям' && <Text>При публикации записи с эпизодом, он становится доступным только для друзей</Text>}
                 {this.state.availability == 'Только мне' && <Text>При публикации записи с эпизодом, он становится доступным только Вам</Text>}
+                <View style={{marginHorizontal:20}}>
                 <TouchableOpacity onPress={() => {this.props.navigation.navigate('DoneScreen', {podcastName: this.state.podcastName, podcastDescription: this.state.podcastDescription})}}>
-                    <Text>Далее</Text>
+                    <NextButton />
                 </TouchableOpacity>
+                </View>
             </View>
         );
     }
