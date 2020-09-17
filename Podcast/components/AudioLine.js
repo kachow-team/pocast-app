@@ -115,133 +115,133 @@ class AudioLine extends Component {
                 </G>
                 <G clip-path="url(#clip1)">
                     <Path d="M0 26H351V122H0V26Z" fill="#F2F3F5"/>
-                    <Path d="M0 69.2001V76.8001" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M0 69.2001V76.8001" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M5.51318 74.3818V71.6182" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M5.51318 74.3818V71.6182" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M11.0259 74.0364V71.9636" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M11.0259 74.0364V71.9636" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M60.2354 74.0364V71.9636" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M60.2354 74.0364V71.9636" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M16.5396 73.6909V72.3091" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M16.5396 73.6909V72.3091" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M22.0522 76.9151V69.0848" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M22.0522 76.9151V69.0848" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M27.5654 80.9454V65.0544" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M27.5654 80.9454V65.0544" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M32.9762 90.2727V55.7273" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M32.9762 90.2727V55.7273" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M38.4897 79.5637V66.4364" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M38.4897 79.5637V66.4364" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M44.0026 76.4545V69.5454" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M44.0026 76.4545V69.5454" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M49.5156 79.5637V66.4364" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M49.5156 79.5637V66.4364" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M55.0284 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M55.0284 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M66.0552 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M66.0552 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M71.5684 79.2181V66.7817" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M71.5684 79.2181V66.7817" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M110.261 74.9001V71.1001" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M110.261 74.9001V71.1001" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M116.081 76.8576V69.1425" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M116.081 76.8576V69.1425" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M121.594 72.3667V73.6334" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M121.594 72.3667V73.6334" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M76.9786 84.4001V61.6001" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M76.9786 84.4001V61.6001" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M82.4918 77.4909V68.509" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M82.4918 77.4909V68.509" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M88.0055 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M88.0055 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M93.5187 74.0364V71.9636" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M93.5187 74.0364V71.9636" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M127.312 76.8576V69.1425" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M127.312 76.8576V69.1425" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M132.825 84.5152V61.4849" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M132.825 84.5152V61.4849" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M138.235 86.8181V59.1818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M138.235 86.8181V59.1818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M143.748 92V54" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M143.748 92V54" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M149.262 86.8181V59.1818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M149.262 86.8181V59.1818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M154.775 63.2122V82.7879" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M154.775 63.2122V82.7879" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M99.0314 79.2181V66.7817" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M99.0314 79.2181V66.7817" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M104.545 75.7636V70.2363" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M104.545 75.7636V70.2363" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M161.309 65.9757V80.0242" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M161.309 65.9757V80.0242" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M166.822 68.3939V77.606" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M166.822 68.3939V77.606" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M172.335 74.0364V71.9636" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M172.335 74.0364V71.9636" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M221.545 76.4545V69.5454" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M221.545 76.4545V69.5454" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M177.848 73.6909V72.3091" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M177.848 73.6909V72.3091" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M344.874 71.9636V74.0364" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M344.874 71.9636V74.0364" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M338.34 68.509V77.4909" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M338.34 68.509V77.4909" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M327.314 71.9636V74.0364" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M327.314 71.9636V74.0364" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M183.361 76.9151V69.0848" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M183.361 76.9151V69.0848" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M188.874 80.9454V65.0544" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M188.874 80.9454V65.0544" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M194.285 77.4909V68.509" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M194.285 77.4909V68.509" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M199.799 79.5637V66.4364" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M199.799 79.5637V66.4364" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M205.312 84.4001V61.6001" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M205.312 84.4001V61.6001" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M210.824 83.0182V62.9818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M210.824 83.0182V62.9818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M216.338 80.9454V65.0544" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M216.338 80.9454V65.0544" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M227.364 83.0182V62.9818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M227.364 83.0182V62.9818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M232.877 86.8181V59.1818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M232.877 86.8181V59.1818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M271.571 74.0364V71.9636" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M271.571 74.0364V71.9636" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M277.39 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M277.39 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M282.903 72.6545V73.3455" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M282.903 72.6545V73.3455" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M351 72.6545V73.3455" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M351 72.6545V73.3455" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M332.623 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M332.623 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M321.393 72.6545V73.3455" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M321.393 72.6545V73.3455" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M238.288 92V54" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M238.288 92V54" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round" stroke-linejoin="round"/>
-                    <Path d="M243.801 83.0182V62.9818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M243.801 83.0182V62.9818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M249.314 79.2181V66.7817" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M249.314 79.2181V66.7817" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M254.827 75.7636V70.2363" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M254.827 75.7636V70.2363" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M288.621 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M288.621 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M294.133 79.2181V66.7817" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M294.133 79.2181V66.7817" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M299.545 75.4182V70.5818" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M299.545 75.4182V70.5818" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M305.057 77.4909V68.509" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M305.057 77.4909V68.509" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M310.571 75.0727V70.9272" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M310.571 75.0727V70.9272" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M316.084 74.0364V71.9636" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M316.084 74.0364V71.9636" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M260.34 79.2181V66.7817" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M260.34 79.2181V66.7817" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
-                    <Path d="M265.854 75.7636V70.2363" stroke="#3F8AE0" stroke-width="2" stroke-miterlimit="10"
+                    <Path d="M265.854 75.7636V70.2363" stroke="#3F8AE0" strokeWidth="2" strokeMiterlimit="10"
                           stroke-linecap="round"/>
                 </G>
                 <Defs>
