@@ -8,9 +8,7 @@ target 'Podcast' do
 
   use_react_native!(:path => config["reactNativePath"])
 
-  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
-  pod 'RNCCheckbox', :path => '../node_modules/@react-native-community/checkbox'
 
   target 'PodcastTests' do
     inherit! :complete
