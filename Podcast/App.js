@@ -22,6 +22,7 @@ import Svg, {
   Path,
 } from 'react-native-svg';
 import HelpOutlineButton from './components/HelpOutlineButton';
+import AddPodcastScreen from './screens/AddPodcastScreen';
 
 function MyImagePicker(props) {
   const [picSource, setPicSource] = useState(null);
@@ -436,21 +437,29 @@ function BigMock({ route, navigation }) {
 
 const Stack = createStackNavigator();
 
-function App() {
-  return (
-      <NavigationContainer>
-      <Stack.Navigator initialRouteName="Donations" screenOptions={{
-    headerBackTitleVisible: false}}>
-<Stack.Screen name="Donations" options={{title:"Пожертвования"}} component={Donations} />
-  <Stack.Screen name="DonationType" options={{title:"Тип сбора"}} component={DonationType} />
-  <Stack.Screen name="TargetDonation" options={{title:"Целевой сбор"}} component={TargetDonation} />
-  <Stack.Screen name="RegularDonation" options={{title:"Регулярный сбор"}} component={RegularDonation}/>
-  <Stack.Screen name="Feed" options={{title:"Лента"}} component={Feed} />
-  <Stack.Screen name="BigMock" options={{headerShown:false}} component={BigMock}/>
-  </Stack.Navigator>
-  </NavigationContainer>
+// function App() {
+//   return (
+//       <NavigationContainer>
+//       <Stack.Navigator initialRouteName="Donations" screenOptions={{
+//     headerBackTitleVisible: false}}>
+// <Stack.Screen name="Donations" options={{title:"Пожертвования"}} component={Donations} />
+//   <Stack.Screen name="DonationType" options={{title:"Тип сбора"}} component={DonationType} />
+//   <Stack.Screen name="TargetDonation" options={{title:"Целевой сбор"}} component={TargetDonation} />
+//   <Stack.Screen name="RegularDonation" options={{title:"Регулярный сбор"}} component={RegularDonation}/>
+//   <Stack.Screen name="Feed" options={{title:"Лента"}} component={Feed} />
+//   <Stack.Screen name="BigMock" options={{headerShown:false}} component={BigMock}/>
+//   </Stack.Navigator>
+//   </NavigationContainer>
+// );
+// }
+
+const App = () => (
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName="AddPodcastScreen">
+            <Stack.Screen name="AddPodcastScreen" options={{title:"Новый подкаст"}} component={AddPodcastScreen} />
+        </Stack.Navigator>
+    </NavigationContainer>
 );
-}
 
 const styles = StyleSheet.create({
   container: {
